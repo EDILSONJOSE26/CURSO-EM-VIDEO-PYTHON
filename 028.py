@@ -4,12 +4,17 @@ pelo computador.
 
 o programa deverá escrever na tela se o usuário venceu ou perdeu.'''
 
-import random
+from random import randint
+from time import sleep
 
-s = random.randint(0, 5)
-
-num = int(input('Digite o seu numero da sorte: '))
-if num == s:
-    print('Parabens voçe assertou!')
+computador = randint(0, 5)
+print('-=-' * 20)
+print('Vou pensar em um número entre 0 e 5. Tente adivinhar...')
+print('-=-' * 20)
+jogador = int(input('Digite o seu numero da sorte: '))
+print('PROCESSANDO...')
+sleep(4)
+if jogador == computador:
+    print('PARABENS! Voçe conseguiu me vencer!')
 else:
-    print('Voçe errou!')
+    print('GANHEI! Eu pensei no número {} e não no {}!'.format(computador, jogador))
