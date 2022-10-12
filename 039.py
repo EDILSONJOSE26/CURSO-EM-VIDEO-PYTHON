@@ -10,6 +10,6 @@ soma_a = (2022 - ano_ncs)
 if soma_a < 18:
     print('idade {} ainda vai se alistar'.format(soma_a))
 elif soma_a == 18:
-    print('é a hora de se alistar')
+    print('idade {} é a hora de se alistar'.format(soma_a))
 elif soma_a > 18:
-    print('já passou do tempo')
+    print('idade {} já passou do tempo'.format(soma_a))
