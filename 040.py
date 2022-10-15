@@ -6,11 +6,11 @@
 nota_1 = float(input('Digite a primeira nota: '))
 nota_2 = float(input('Digite a segunda nota: '))
 
-s = (nota_1 + nota_2) / 2
+media = (nota_1 + nota_2) / 2
 
-if s < 5:
-    print('Sua media é {} voçê está REPROVADO!'.format(s))
-elif s != 5 or s != 6.9:
-    print('Sua media é {} voçê esta de RECUPERAÇÃO!'.format(s))
-elif s < 7:
-    print('PARABENS VOÇÊ ESTA APROVADO SUA MEDIA É {}'.format(s))
+if media < 5:
+    print('Sua media é {} voçê está REPROVADO!'.format(media))
+elif media >= 5 and media < 7:
+    print('Sua media é {} voçê esta de RECUPERAÇÃO!'.format(media))
+elif media >= 7:
+    print('PARABENS VOÇÊ ESTA APROVADO SUA MEDIA É {}'.format(media))
