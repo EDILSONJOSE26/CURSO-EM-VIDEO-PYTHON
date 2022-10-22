@@ -1,6 +1,8 @@
 s = 0
+cont = 0
 for c in range(1,7):
-    c = int(input('Digite um número: '))
-    if c%2 == 0:
-     s += c
-print(s)
+    num = int(input('Digite o {} valor: '.format(c)))
+    if num%2 == 0:
+     s += num
+     cont += 1
+print('Voçé informou {} números PARES e a soma foi {}'.format(cont, s))
